@@ -7,16 +7,17 @@ using System;
 // Example for IronSource Unity.
 public class IronSourceDemoScript : MonoBehaviour
 {
-
+    [SerializeField] private string _androidAppKey = "85460dcd";
+    [SerializeField] private string _iosAppKey = "8545d445";
    
 
     public void Start()
     {
 
 #if UNITY_ANDROID
-        string appKey = "85460dcd";
+        string appKey = _androidAppKey;
 #elif UNITY_IPHONE
-        string appKey = "8545d445";
+        string appKey = _iosAppKey;
 #else
         string appKey = "unexpected_platform";
 #endif
