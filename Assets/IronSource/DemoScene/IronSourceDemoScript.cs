@@ -28,6 +28,9 @@ public class IronSourceDemoScript : MonoBehaviour
 
         Debug.Log("unity-script: unity version" + IronSource.unityVersion());
 
+        // Set TestSuite enabled
+        IronSource.Agent.setMetaData("is_test_suite", "enable"); 
+        
         // SDK init
         Debug.Log("unity-script: IronSource.Agent.init");
         IronSource.Agent.init(appKey);
@@ -209,16 +212,26 @@ public class IronSourceDemoScript : MonoBehaviour
             IronSource.Agent.destroyBanner();
         }
 
-
-
+        if (_isInitialised)
+        {
+            Rect launchTestSuiteButton = new Rect(0.10f * Screen.width, 0.55f * Screen.height, 0.80f * Screen.width, 0.08f * Screen.height);
+            if (GUI.Button(launchTestSuiteButton, "Launch TestSuite"))
+            {
+                Debug.Log("unity-script: launchTestSuiteButtonClicked");
+                IronSource.Agent.launchTestSuite();
+            }
+        }
 
     }
     
     #region Init callback handlers
 
+    private bool _isInitialised = false;
+    
     void SdkInitializationCompletedEvent()
     {
         Debug.Log("unity-script: I got SdkInitializationCompletedEvent");
+        _isInitialised = true;
     }
 
     #endregion
