@@ -30,7 +30,12 @@ public class IronSourceDemoScript : MonoBehaviour
         Debug.Log("unity-script: unity version" + IronSource.unityVersion());
 
         // Set TestSuite enabled
+        Debug.Log("unity-script: IronSource.Agent.setMetaData:is_test_suite=enabled");
         IronSource.Agent.setMetaData("is_test_suite", "enable"); 
+        
+        // Set NetworkTrack enabled
+        Debug.Log("unity-script: IronSource.Agent.shouldTrackNetworkState=true");
+        IronSource.Agent.shouldTrackNetworkState(true);
         
         // SDK init
         Debug.Log("unity-script: IronSource.Agent.init");
@@ -233,6 +238,11 @@ public class IronSourceDemoScript : MonoBehaviour
     {
         Debug.Log("unity-script: I got SdkInitializationCompletedEvent");
         _isInitialised = true;
+        
+        Debug.Log("unity-script: Auto load interstitial on sdk init");
+        Debug.Log("unity-script: IronSource.Agent.loadInterstitial");
+        IronSource.Agent.loadInterstitial();
+
     }
 
     #endregion
