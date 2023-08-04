@@ -1,0 +1,62 @@
+08-04 15:13:58.294	com.istest.crash	28485	29152	E	CRASH   	 *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***	
+08-04 15:13:58.295	com.istest.crash	28485	29152	E	CRASH   	 Version '2021.3.15f1 (e8e88683f834)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a'	
+08-04 15:13:58.296	com.istest.crash	28485	29152	E	CRASH   	 Build fingerprint: 'xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys'	
+08-04 15:13:58.296	com.istest.crash	28485	29152	E	CRASH   	 Revision: '0'	
+08-04 15:13:58.296	com.istest.crash	28485	29152	E	CRASH   	 ABI: 'arm64'	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	 Timestamp: 2023-08-04 15:13:58+0300	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	 pid: 28485, tid: 29152, name: unityCallBackTh  >>> com.istest.crash <<<	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	 uid: 10502	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	 signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x52	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	 Cause: null pointer dereference	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	     x0  0000000000000000  x1  0000000000000000  x2  0000007e4dbeb2e0  x3  0000007e4dbeb410	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	     x4  0000000000000000  x5  0000000000000005  x6  0000000000000000  x7  0000000000000000	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	     x8  0000007f66184ba4  x9  0000080000000000  x10 0000080000000000  x11 0000000000000000	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	     x12 0000000000000001  x13 0000000000000001  x14 000000000000018a  x15 0000000000000000	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	     x16 0000007f66e1c918  x17 0000007f9d98cf88  x18 0000007f9c0aeae0  x19 0000007e4dbeb410	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	     x20 0000000000000000  x21 0000000000000000  x22 0000007e4dbeb2e0  x23 0000000000000003	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	     x24 0000000000000000  x25 d3e2432ccc0017c8  x26 0000007e927d7698  x27 d3e2432ccc0017c8	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	     x28 0000000000000004  x29 0000007e4dbeb538	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	     sp  0000007e4dbeb250  lr  0000007f67eeb574  pc  0000007f6619b618	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	 	
+08-04 15:13:58.297	com.istest.crash	28485	29152	E	CRASH   	 backtrace:	
+08-04 15:13:58.298	com.istest.crash	28485	29152	E	CRASH   	       #00 pc 00000000003ad618 (il2cpp::vm::Method::GetParamCount(MethodInfo const*) at /Users/d.koshman/UnityEditors/2021.3.15f1/Unity.app/Contents/il2cpp/libil2cpp/vm/Method.cpp:88)  /data/app/com.istest.crash-1/lib/arm64/libil2cpp.so (BuildId: 841e00ba4aa15678de8fe20cb769c56a79bfff7f)	
+08-04 15:13:58.298	com.istest.crash	28485	29152	E	CRASH   	       #01 pc 000000000022f570 (Animator_CUSTOM_GetStats(ScriptingBackendNativeObjectPtrOpaque*) at ??:?)  /data/app/com.istest.crash-1/lib/arm64/libunity.so (BuildId: c4abfe1350f16c7f296b9a33cc66cdb450448ff9)	
+08-04 15:13:58.298	com.istest.crash	28485	29152	E	CRASH   	       #02 pc 000000000023cfb0 (AnimationPosePlayable_CUSTOM_GetReadDefaultPoseInternal(HPlayable&) at ??:?)  /data/app/com.istest.crash-1/lib/arm64/libunity.so (BuildId: c4abfe1350f16c7f296b9a33cc66cdb450448ff9)	
+08-04 15:13:58.298	com.istest.crash	28485	29152	E	CRASH   	       #03 pc 00000000000b4594 (?? ??:0)  /data/app/com.istest.crash-1/lib/arm64/libunity.so (BuildId: c4abfe1350f16c7f296b9a33cc66cdb450448ff9)	
+08-04 15:13:58.298	com.istest.crash	28485	29152	E	CRASH   	       #04 pc 0000000002046ccc  /data/app/com.istest.crash-1/oat/arm64/base.odex	
+08-04 15:13:58.747	com.istest.crash	28485	29235	W	Settings	 Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.	
+08-04 15:13:58.760	com.istest.crash	28485	28524	E	CRASH   	 other thread is trapped; signum = 11	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 FATAL EXCEPTION: UnityMain	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 Process: com.istest.crash, PID: 28485	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 java.lang.Error: *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 Version '2021.3.15f1 (e8e88683f834)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a'	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 Build fingerprint: 'xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys'	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 Revision: '0'	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 ABI: 'arm64'	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 Timestamp: 2023-08-04 15:13:58+0300	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 pid: 28485, tid: 29152, name: unityCallBackTh  >>> com.istest.crash <<<	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 uid: 10502	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x52	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 Cause: null pointer dereference	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	     x0  0000000000000000  x1  0000000000000000  x2  0000007e4dbeb2e0  x3  0000007e4dbeb410	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	     x4  0000000000000000  x5  0000000000000005  x6  0000000000000000  x7  0000000000000000	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	     x8  0000007f66184ba4  x9  0000080000000000  x10 0000080000000000  x11 0000000000000000	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	     x12 0000000000000001  x13 0000000000000001  x14 000000000000018a  x15 0000000000000000	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	     x16 0000007f66e1c918  x17 0000007f9d98cf88  x18 0000007f9c0aeae0  x19 0000007e4dbeb410	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	     x20 0000000000000000  x21 0000000000000000  x22 0000007e4dbeb2e0  x23 0000000000000003	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	     x24 0000000000000000  x25 d3e2432ccc0017c8  x26 0000007e927d7698  x27 d3e2432ccc0017c8	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	     x28 0000000000000004  x29 0000007e4dbeb538	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	     sp  0000007e4dbeb250  lr  0000007f67eeb574  pc  0000007f6619b618	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 backtrace:	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	       #00 pc 00000000003ad618 (il2cpp::vm::Method::GetParamCount(MethodInfo const*) at /Users/d.koshman/UnityEditors/2021.3.15f1/Unity.app/Contents/il2cpp/libil2cpp/vm/Method.cpp:88)  /data/app/com.istest.crash-1/lib/arm64/libil2cpp.so (BuildId: 841e00ba4aa15678de8fe20cb769c56a79bfff7f)	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	       #01 pc 000000000022f570 (Animator_CUSTOM_GetStats(ScriptingBackendNativeObjectPtrOpaque*) at ??:?)  /data/app/com.istest.crash-1/lib/arm64/libunity.so (BuildId: c4abfe1350f16c7f296b9a33cc66cdb450448ff9)	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	       #02 pc 000000000023cfb0 (AnimationPosePlayable_CUSTOM_GetReadDefaultPoseInternal(HPlayable&) at ??:?)  /data/app/com.istest.crash-1/lib/arm64/libunity.so (BuildId: c4abfe1350f16c7f296b9a33cc66cdb450448ff9)	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	       #03 pc 00000000000b4594 (?? ??:0)  /data/app/com.istest.crash-1/lib/arm64/libunity.so (BuildId: c4abfe1350f16c7f296b9a33cc66cdb450448ff9)	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	       #04 pc 0000000002046ccc  /data/app/com.istest.crash-1/oat/arm64/base.odex	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 	at libil2cpp.0x3ad618 (il2cpp::vm::Method::GetParamCount(MethodInfo const*) at /Users/d.koshman/UnityEditors/2021.3.15f1/Unity.app/Contents/il2cpp/libil2cpp/vm/Method.cpp:88)(Native Method)	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 	at libunity.0x22f570 (Animator_CUSTOM_GetStats(ScriptingBackendNativeObjectPtrOpaque*) at ??:?)(Native Method)	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 	at libunity.0x23cfb0 (AnimationPosePlayable_CUSTOM_GetReadDefaultPoseInternal(HPlayable&) at ??:?)(Native Method)	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 	at libunity.0xb4594 (?? ??:0)(Native Method)	
+08-04 15:13:58.766	com.istest.crash	28485	28524	E	AndroidRuntime	 	at base.0x2046ccc(Native Method)	

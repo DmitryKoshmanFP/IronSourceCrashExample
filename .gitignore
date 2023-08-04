@@ -5,8 +5,6 @@
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
 /[Ii]osBuild/
 /[Ll]ogs/
 /[Rr]eplays/
@@ -65,7 +63,6 @@ sysinfo.txt
 /Assets/StreamingAssets/guids.meta
 
 # Builds
-*.apk
 *.aab
 *.unitypackage
 *.app
